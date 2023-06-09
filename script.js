@@ -13,7 +13,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: { label: 'Hora' },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,18] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,24] },
         color: { legend: false },
         marks: [
           Plot.barY(sums,
@@ -24,8 +24,9 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       });
       
   
-    d3.select('#chart').append(() => chart_1);
+    d3.select('#chart_luisa').append(() => chart_1);
   });
+  
   d3.csv('datos/datos_actualizados_SOLVA.csv', d3.autoType).then(data => {
     data.forEach(d => {
       const fecha_hora = d.endTime.split(' ');
@@ -41,7 +42,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: { label: 'Hora' },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,18] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,24] },
         color: { legend: false },
         marks: [
           Plot.barY(sums,
@@ -52,7 +53,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       });
       
   
-    d3.select('#chart').append(() => chart_1);
+    d3.select('#chart_solva').append(() => chart_1);
   });
   
   d3.csv('datos/datos_actualizados_OLIVIA.csv', d3.autoType).then(data => {
@@ -70,7 +71,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: { label: 'Hora' },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,18] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain:[0,24] },
         color: { legend: false },
         marks: [
           Plot.barY(sums,
@@ -81,5 +82,5 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       });
       
   
-    d3.select('#chart').append(() => chart_1);
+    d3.select('#chart_olivia').append(() => chart_1);
   });
