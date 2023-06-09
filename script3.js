@@ -13,7 +13,7 @@ d3.csv('datos/datos_agrupados_OLIVIA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 24] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
         color: { legend: false },
         marks: [
             Plot.barY(sums,
@@ -42,7 +42,7 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 24] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
         color: { legend: false },
         marks: [
             Plot.barY(sums,
@@ -71,7 +71,7 @@ d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
         marginRight: 60,
         grid: true,
         x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 24] },
+        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
         color: { legend: false },
         marks: [
             Plot.barY(sums,
