@@ -21,7 +21,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       ]
     });
   
-    d3.select('#chart_1_luisa').append(() => chart2);
+    d3.select('#chart_1_luisaa').append(() => chart2);
   });
   
 
@@ -50,7 +50,7 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       ]
     });
   
-    d3.select('#chart_1_solva').append(() => chart2);
+    d3.select('#chart_1_solvaa').append(() => chart2);
   });
   
 
@@ -79,6 +79,6 @@ d3.csv('datos/datos_actualizados_LUISA.csv', d3.autoType).then(data => {
       ]
     });
   
-    d3.select('#chart_1_olivia').append(() => chart2);
+    d3.select('#chart_1_oliviaa').append(() => chart2);
   });
   
