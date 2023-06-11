@@ -9,15 +9,15 @@ d3.csv('datos/datos_agrupados_OLIVIA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
-        marginLeft: 60,
+        marginLeft: 200,
         marginRight: 60,
         grid: true,
-        x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
+        x: { domain:[0,8]  },
+        y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
         marks: [
-            Plot.barY(sums,
-                { x: d => d[0], y: d => d[1], fill: '#225EA8' }
+            Plot.barX(sums,
+                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
             ),
             Plot.frame()
             
@@ -38,15 +38,15 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
-        marginLeft: 60,
+        marginLeft: 200,
         marginRight: 60,
         grid: true,
-        x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
+        x: { domain:[0,8]  },
+        y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
         marks: [
-            Plot.barY(sums,
-                { x: d => d[0], y: d => d[1], fill: '#225EA8' }
+            Plot.barX(sums,
+                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
             ),
             Plot.frame()
             
@@ -57,7 +57,6 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
 });
 
 d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
-    // Ordenar los datos por msPlayed de forma descendente y tomar las 10 primeras canciones
     const filteredData = data.sort((a, b) => b.msPlayed - a.msPlayed).slice(0, 10);
     
     filteredData.forEach(d => {
@@ -67,20 +66,19 @@ d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
-        marginLeft: 60,
+        marginLeft: 200,
         marginRight: 60,
         grid: true,
-        x: {   tickRotate: -45, },
-        y: { label: 'Cantidad de canciones escuchadas (horas)', domain: [0, 8] },
+        x: { domain:[0,8]  },
+        y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
         marks: [
-            Plot.barY(sums,
-                { x: d => d[0], y: d => d[1], fill: '#225EA8' }
+            Plot.barX(sums,
+                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
             ),
             Plot.frame()
             
         ]
     });
-
     d3.select('#chart_3_solva').append(() => chart_3);
 });
