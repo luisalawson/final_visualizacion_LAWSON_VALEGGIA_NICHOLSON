@@ -17,7 +17,8 @@ d3.csv('datos/datos_agrupados_OLIVIA.csv', d3.autoType).then(data => {
         color: { legend: false },
         marks: [
             Plot.barX(sums,
-                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
+                { y: d => d[0], x: d => d[1], fill: '#225EA8',        sort: { y: "x", reverse: true },  
+            }
             ),
             Plot.frame()
             
@@ -46,7 +47,8 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
         color: { legend: false },
         marks: [
             Plot.barX(sums,
-                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
+                { y: d => d[0], x: d => d[1], fill: '#225EA8',         sort: { y: "x", reverse: true },  
+            }
             ),
             Plot.frame()
             
@@ -74,7 +76,8 @@ d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
         color: { legend: false },
         marks: [
             Plot.barX(sums,
-                { y: d => d[0], x: d => d[1], fill: '#225EA8' }
+                { y: d => d[0], x: d => d[1], fill: '#225EA8',        sort: { y: "x", reverse: true },  
+            }
             ),
             Plot.frame()
             
