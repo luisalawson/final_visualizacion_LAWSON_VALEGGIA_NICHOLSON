@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Perfil de Spotify</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
   <script src="script5.js"></script>
+  <script src="script3.js"></script>
+
 </head>
+
 <body>
-  
+
   <div class="content">
     <h2>Artistas más escuchados</h2>
     <div class="artist-container">
@@ -32,74 +36,85 @@
         <img src="imagenes/nicki.webp" alt="Artista 5">
         <p>Nicki Nicole</p>
       </div>
-      
+
     </div>
-    
+
     <div id="chart_8"></div>
 
     <h2>Canciones más escuchadas</h2>
     <div class="song-container">
-      <div class="song">
-        <img src="imagenes/arrancarmelo.webp" alt="Canción 1">
-        <p>ARRANCARMELO - WOS</p>
+        <div class="song">
+          <img src="imagenes/bzrp_quevedo.jpeg" alt="Canción 1">
+          <p>Bzrp Music Sessions, Vol. 52- QUEVEDO </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/arrancarmelo.webp" alt="Canción 2">
+          <p>ARRANCARMELO - WOS </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/paris.jpeg" alt="Canción 3">
+          <p>Paris- Morat </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/quereme.jpeg" alt="Canción 4">
+          <p>Quereme - WOS </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/vistaalmar.jpeg" alt="Canción 5">
+          <p>VISTA AL MAR - Quevedo </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/claremae.jpeg" alt="Canción 6">
+          <p>Not Sad Anymore - Clara Mae </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/marte.jpeg" alt="Canción 7">
+          <p>Marte - Maria becerra </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/carsoutside.jpeg" alt="Canción 8">
+          <p>Car's Outside Acoustic - James Arthur </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/shesalliwannabe.jpeg" alt="Canción 9">
+          <p>she´s all i wanna be - Tate McRae </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/snap.jpeg" alt="Canción 10">
+          <p>SNAP - Rosa Linn </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/quereme.jpeg" alt="Canción 11">
+          <p> QUEREME - WOS </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/arrancarmelo.webp" alt="Canción 12">
+          <p>ARRANCARMELO - WOS </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/sinseñal.jpeg" alt="Canción 13">
+          <p>SIN SEÑAL - QUEVEDO </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/vistaalmar.jpeg" alt="Canción 14">
+          <p>VISTA AL MAR - QUEVEDO </p>
+        </div>
+        <div class="song">
+          <img src="imagenes/culpa.jpeg" alt="Canción 15">
+          <p>CULPA - WOS</p>
+        </div>
       </div>
-      <div class="song">
-        <img src="imagenes/cancion2.jpg" alt="Canción 2">
-        <p>Canción 2</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion3.jpg" alt="Canción 3">
-        <p>Canción 3</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion4.jpg" alt="Canción 4">
-        <p>Canción 4</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion5.jpg" alt="Canción 5">
-        <p>Canción 5</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion6.jpg" alt="Canción 6">
-        <p>Canción 6</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion7.jpg" alt="Canción 7">
-        <p>Canción 7</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion8.jpg" alt="Canción 8">
-        <p>Canción 8</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion9.jpg" alt="Canción 9">
-        <p>Canción 9</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion10.jpg" alt="Canción 10">
-        <p>Canción 10</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion11.jpg" alt="Canción 11">
-        <p>Canción 11</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion12.jpg" alt="Canción 12">
-        <p>Canción 12</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion13.jpg" alt="Canción 13">
-        <p>Canción 13</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion14.jpg" alt="Canción 14">
-        <p>Canción 14</p>
-      </div>
-      <div class="song">
-        <img src="imagenes/cancion15.jpg" alt="Canción 15">
-        <p>Canción 15</p>
-      </div>
+    </div>
+
+    <div class="canciones_escuchadas_cada_una">
+      <h1>"Olivia: "</h1>
+      <div id="chart_3_olivia"></div>
+      <h1>"Luisa: "</h1>
+      <div id="chart_3_luisa"></div>
+      <h1>"SOLVA"</h1>
+      <div id="chart_3_solva"></div>
     </div>
   </div>
 </body>
+
 </html>

@@ -9,9 +9,15 @@ d3.csv('datos/datos_agrupados_OLIVIA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
+        style: {
+            background: '#141414',
+            fontSize: 10,
+          },
+        width: 650, // Increase the chart width
+        height: 400, // Increase the chart height
+        font: 'Poppins', // Set font family to Poppins
         marginLeft: 200,
         marginRight: 60,
-        grid: true,
         x: { domain:[0,8]  },
         y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
@@ -19,9 +25,7 @@ d3.csv('datos/datos_agrupados_OLIVIA.csv', d3.autoType).then(data => {
             Plot.barX(sums,
                 { y: d => d[0], x: d => d[1], fill: '#225EA8',        sort: { y: "x", reverse: true },  
             }
-            ),
-            Plot.frame()
-            
+            )
         ]
     });
 
@@ -39,9 +43,15 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
+        style: {
+            background: '#141414',
+            fontSize: 10,
+          },
+        width: 650, // Increase the chart width
+        height: 400, // Increase the chart height
+        font: 'Poppins', // Set font family to Poppins
         marginLeft: 200,
         marginRight: 60,
-        grid: true,
         x: { domain:[0,8]  },
         y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
@@ -49,8 +59,7 @@ d3.csv('datos/datos_agrupados_LUISA.csv', d3.autoType).then(data => {
             Plot.barX(sums,
                 { y: d => d[0], x: d => d[1], fill: '#225EA8',         sort: { y: "x", reverse: true },  
             }
-            ),
-            Plot.frame()
+            )
             
         ]
     });
@@ -68,9 +77,15 @@ d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
     const sums = d3.rollup(filteredData, v => d3.sum(v, d => d.msPlayed), d => d.trackName);
 
     const chart_3 = Plot.plot({
+        style: {
+            background: '#141414',
+            fontSize: 10,
+          },
+        width: 650, // Increase the chart width
+        height: 400, // Increase the chart height
+        font: 'Poppins', // Set font family to Poppins
         marginLeft: 200,
         marginRight: 60,
-        grid: true,
         x: { domain:[0,8]  },
         y: { label: 'Cantidad de canciones escuchadas (horas)' },
         color: { legend: false },
@@ -78,8 +93,7 @@ d3.csv('datos/datos_agrupados_SOLVA.csv', d3.autoType).then(data => {
             Plot.barX(sums,
                 { y: d => d[0], x: d => d[1], fill: '#225EA8',        sort: { y: "x", reverse: true },  
             }
-            ),
-            Plot.frame()
+            )
             
         ]
     });
