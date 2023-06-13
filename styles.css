@@ -14,12 +14,46 @@
     margin: 0 auto;
     background-color: var(--black);
     color: var(--white);
-   
-      width: 50%; /* Ajusta el ancho según tus necesidades */
-
-    
+    width: 50%; /* Ajusta el ancho según tus necesidades */
   }
-  
+
+  .canciones_escuchadas_cada_una {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .canciones_escuchadas_cada_una > div {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .canciones_escuchadas_cada_una div.chart-container {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    border: 1px solid #ccc;
+    /* Otros estilos de diseño para los gráficos */
+  }
+  #chart_3_olivia {
+    margin: 0 auto;
+    background-color: var(--black);
+    color: var(--white);
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+  }
+  #chart_3_luisa {
+    margin: 0 auto;
+    background-color: var(--black);
+    color: var(--white);
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+  }
+  #chart_3_solva {
+    margin: 0 auto;
+    background-color: var(--black);
+    color: var(--white);
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -32,10 +66,10 @@
   .header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Añade esta línea para centrar horizontalmente el contenido */
     background-color: rgba(66, 66, 66, 0.236);
     padding: 20px;
-    height: 100vh; /* Añade esta línea para que el encabezado ocupe toda la altura de la ventana */
+    justify-content: center;
+    align-items: center;
   }
   
   h1 {
@@ -51,6 +85,8 @@
     overflow: hidden;
     margin-right: 20px;
     position: relative;
+    justify-content: center;
+    align-items: center;
   }
   
   .profile-picture img {
@@ -63,6 +99,7 @@
   
   .content {
     padding: 20px;
+    
   }
   
 
@@ -73,8 +110,10 @@
   }
   
   .artist-container {
-    display: flex;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  
   }
   
   .artist {
@@ -94,32 +133,80 @@
   .song-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
-  .song {
+  .songluisa {
     display: flex;
     align-items: center;
     width: calc(18% - 18px);
     height: 80px;
-    background-color: #ccc;
+    background-color: #6823D3;
     margin-right: 20px;
     margin-bottom: 20px;
     padding-left: 10px;
   }
   
-  .song img {
+  .songluisa img {
     width: 60px;
     height: 60px;
     margin-right: 10px;
     object-fit: cover;
   }
   
-  .song p {
+  .songluisa p {
     font-size: 14px;
     margin: 0;
     color: var(--white);
   }
   
+  .songolivia {
+    display: flex;
+    align-items: center;
+    width: calc(18% - 18px);
+    height: 80px;
+    background-color: #D32373;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  
+  .songolivia img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .songolivia p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--white);
+  }
+
+  .songsolva {
+    display: flex;
+    align-items: center;
+    width: calc(18% - 18px);
+    height: 80px;
+    background-color: #23B0D3;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  
+  .songsolva img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .songsolva p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--white);
+  }
   .sticky-bar {
     position: sticky;
     top: 0;
