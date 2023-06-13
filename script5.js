@@ -33,14 +33,9 @@ d3.csv('datos/datos_merge_coincidencias.csv', d3.autoType).then(data => {
         y: 'artistName',
         fill: d => (d.artistName === "WOS" || d.artistName === "Bizarrap" || d.artistName === "Nicki Nicole" || d.artistName === "Morat" || d.artistName === "TINI") ? "#4D36DB" : "#C7D9F1",
       }),
-      Plot.image(filteredData, {
-        x: 'coincidencias',
-        y: 'artistName',
-        url: d => getImageUrl(d.artistName),
-        width: 20,
-        height: 20,
-        dy: 5,
-      })
+      Plot.image(filteredData,{
+        src: d => getImageUrl(d.artistName),
+      }),
     ]
   });
 
